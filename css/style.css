@@ -5,3 +5,33 @@ body {
 h1 {
   font-size: 5vw;
 }
+
+h2 {
+  text-align: center;
+  font-size: 5vw;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+p {
+  text-size-adjust: 80px;
+  }
