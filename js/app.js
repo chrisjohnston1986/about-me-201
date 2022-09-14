@@ -4,7 +4,7 @@ console.log('hey world heyyyy!');
 
 let visitorName = prompt('What is your name?');
 
-console.log('QuestioName >>> ', visitorName);
+console.log('QuestionName >>> ', visitorName);
 
 alert(`Welcome to my site, ${visitorName}! Please guess yes or no to the following questions.`);
 
