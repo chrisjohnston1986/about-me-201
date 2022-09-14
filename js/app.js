@@ -4,6 +4,8 @@ console.log('hey world heyyyy!');
 
 let visitorName = prompt('What is your name?');
 
+let score = 0;
+
 console.log('QuestionName >>> ', visitorName);
 
 alert(`Welcome to my site, ${visitorName}! Please guess yes or no to the following questions.`);
@@ -14,6 +16,7 @@ console.log('QuestionOne >>> ', questionOneGuess);
 
 if(questionOneGuess === 'y' || questionOneGuess === 'yes'){
   alert('Yeaaaaaaaaah!');
+  score++;
 } else if(questionOneGuess === 'n' || questionOneGuess === 'no'){
   alert('Wrong!');
 }
@@ -24,6 +27,7 @@ console.log('QuestionTwo >>> ', questionTwoGuess);
 
 if(questionTwoGuess === 'y' || questionTwoGuess === 'yes'){
   alert('Yeaaaaaaaaah!');
+  score++;
 } else if(questionTwoGuess === 'n' || questionTwoGuess === 'no'){
   alert('Wrong!');
 }
@@ -34,6 +38,7 @@ console.log('QuestionThree >>> ', questionThreeGuess);
 
 if(questionThreeGuess === 'y' || questionThreeGuess === 'yes'){
   alert('Yeaaaaaaaaah!');
+  score++;
 } else if(questionThreeGuess === 'n' || questionThreeGuess === 'no'){
   alert('Wrong!');
 }
@@ -44,6 +49,7 @@ console.log('QuestionFour >>> ', questionFourGuess);
 
 if(questionFourGuess === 'y' || questionFourGuess === 'yes'){
   alert('YOU BETTER ROCK YOUR BODY NOW!!!');
+  score++;
 } else if(questionFourGuess === 'n' || questionFourGuess === 'no'){
   alert('Wrong!');
 }
@@ -54,8 +60,12 @@ console.log('QuestionFive >>> ', questionFiveGuess);
 
 if(questionFiveGuess === 'y' || questionFiveGuess === 'yes'){
   alert('ALRIGHT!!!');
+  score++;
 } else if(questionFiveGuess === 'n' || questionFiveGuess === 'no'){
   alert('Wrong! ........just messing with you.');
 }
 
 alert(`Thanks for playing, ${visitorName}!`);
+
+alert(`${score}`);
+
