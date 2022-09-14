@@ -1,5 +1,7 @@
 'use strict';
 
+// <!-- Table 11 Remo Collaboration w/Trace and Hunter -->
+
 console.log('hey world heyyyy!');
 
 let visitorName = prompt('What is your name?');
@@ -74,18 +76,17 @@ while(guessNum>0){
   guessNum--;
   console.log('NumberGuess >>> ', userNumGuess);
   if (parseInt(userNumGuess) === myNum){
-    alert ('Correct, Great job!!');
+    alert ('Whoa!!! You nailed it. How did you do that???');
     guessNum=0;
   }
   else if(parseInt(userNumGuess) > myNum ){
-    alert ('Too High');
+    alert ('Too High - try again');
   }
   else if(parseInt(userNumGuess) < myNum ){
-    alert ('Too Low');
+    alert ('Too Low - try again');
   }
 }
 
+alert(`You must be great at trivia night, ${visitorName}!`);
 
-alert(`Thanks for playing, ${visitorName}!`);
-
-alert(`You scored a total of ${score}!`);
+alert(`Btw, you scored a total of ${score} on the earlier quiz questions. Nice Job!`);
