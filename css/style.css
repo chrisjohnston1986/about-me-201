@@ -47,3 +47,9 @@ footer {
 li {
   text-align: center;
 }
+
+ol li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
