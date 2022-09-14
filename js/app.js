@@ -6,8 +6,6 @@ let visitorName = prompt('What is your name?');
 
 let score = 0;
 
-let myNum = 7;
-
 console.log('QuestionName >>> ', visitorName);
 
 alert(`Welcome to my site, ${visitorName}! Please guess yes or no to the following questions.`);
@@ -67,12 +65,26 @@ if(questionFiveGuess === 'y' || questionFiveGuess === 'yes'){
   alert('Wrong! ........just messing with you.');
 }
 
-let userNumGuess = prompt('Guess what number, < 10, I am thinking about?');
+let myNum = 7;
 
-console.log('NumberGuess >>> ', userGuess);
+let guessNum = 4;
 
-while(userNumGuess !== myNum){
-    userNumGuess = prompt('Guess what number I am thinking about?');
+while(guessNum>0){
+  let userNumGuess = prompt('Guess what number, < 10, I am thinking about?');
+  guessNum--;
+  console.log('NumberGuess >>> ', userNumGuess);
+  if (parseInt(userNumGuess) === myNum){
+    alert ('Correct, Great job!!');
+    guessNum=0;
+  }
+  else if(parseInt(userNumGuess) > myNum ){
+    alert ('Too High');
+  }
+  else if(parseInt(userNumGuess) < myNum ){
+    alert ('Too Low');
+  }
+}
+
 
 alert(`Thanks for playing, ${visitorName}!`);
 
