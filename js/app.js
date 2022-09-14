@@ -65,7 +65,12 @@ if(questionFiveGuess === 'y' || questionFiveGuess === 'yes'){
   alert('Wrong! ........just messing with you.');
 }
 
+let myNum = 7;
+let userGuess = prompt('Guess what number, < 10, I am thinking about?');
+
+while(userGuess != myNum){
+    userGuess = prompt('Guess what number I am thinking about?');
+
 alert(`Thanks for playing, ${visitorName}!`);
 
-alert(`${score}`);
-
+alert(`You scored a total of ${score}!`);
