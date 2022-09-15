@@ -120,7 +120,7 @@ for (let i = 0; i < guessNumSeven; i++) {
   // guessNumSeven-=1;
   console.log('NumberSevenGuess >>> ', userNumSevenGuess);
   for (let j = 0; j < franchiseArr.length; j++) {
-    if (userNumSevenGuess === franchiseArr[j].toLowerCase()) {
+    if (userNumSevenGuess === franchiseArr[j]) {
       alert('ONE OF MY FAVORITES!');
       // eslint-disable-next-line no-unused-vars
       correctAnswer = true;
