@@ -90,7 +90,9 @@ function question6() {
       alert('Nope... too low - try again!');
     }
   }
+  alert(`${visitorName}, you should have been able to guess my number (7)!`);
 }
+
 question6();
 
 function question7() {
